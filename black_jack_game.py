@@ -6,6 +6,7 @@ cards=[
 ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10,'J','K','Q']
 ]
 def card_draw():
+	"""this function is used to draw a card when ever needed"""
 	a=random.randint(0,4)
 	b=random.randint(0,13)
 	return cards[a-1][b-1]
@@ -18,6 +19,7 @@ value={
 for i in range(2,11):
 	value[i]=i
 def game():
+	"""this is game play which includes all things inside black jack"""
 	while 2!=3:
 		start=input("do you want to start the game Y for yes and N for no")
 		if start=="Y":
